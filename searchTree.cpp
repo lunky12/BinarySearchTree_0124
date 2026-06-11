@@ -46,3 +46,13 @@ public:
             root = newnode;
             return;
         }
+
+        if(element < parent->info)
+        {
+            parent->leftchild = newnode;
+        }
+        else if(element > parent->info)
+        {
+            parent->rightchild = newnode;
+        }
+    }
